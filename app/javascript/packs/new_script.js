@@ -1,4 +1,4 @@
-const navLink = document.querySelectorAll('.nav_link')
+const navLink = document.querySelectorAll('.nav_item')
 
 function linkAction(){
     const navMenu = document.getElementById('nav-menu')

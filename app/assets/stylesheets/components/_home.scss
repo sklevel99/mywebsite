@@ -59,25 +59,26 @@ gap: 1rem;
   // display: none;
 }
 
-.home_scroll-button {
+.home_scroll{
   color: hsl(250, 69%, 61%);
   transition: 0.3s;
 }
 
-.home_scroll-button:hover {
+.home_scroll:hover {
   transform: translateY(0.25rem);
 }
 
 .home_scroll-mouse {
-  font-size: 2rem;
+  font-size: 1.5rem;
 
 }
 
 .home_scroll-name {
-  font-size: 0.875rem;
+  font-size: 0.90rem;
   color: hsl(250, 8%, 15%);
   font-weight: 500;
   margin-right: 0.25rem;
+  font-family: 'Poppins', sans-serif;
 }
 
 .home_scroll-arrow {
