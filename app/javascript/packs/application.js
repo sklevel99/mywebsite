@@ -24,6 +24,9 @@ require("channels")
 
 // External imports
 import "bootstrap";
+import { navMenu, navToggle, navClose} from './script';
+import { navLink } from './new_script';
+
 
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
@@ -32,3 +35,7 @@ document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();
 });
+
+
+
+
