@@ -1,1 +1,14 @@
-section.scss
+.section {
+  padding: 2rem 0 4rem;
+  background-color: #fff;
+}
+
+.section_title {
+  font-size: 1.5rem;
+}
+
+.section_subtitle {
+  display: block;
+  font-size: 0.813rem;
+  margin-bottom: 3rem;
+}
