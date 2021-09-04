@@ -1,0 +1,124 @@
+.skills_container {
+  row-gap: 0;
+}
+
+.skills_header {
+  display: flex;
+  align-items: center;
+  margin: 2.5rem 0rem;
+  cursor: pointer;
+}
+
+.skills_icon,
+.skills_arrow {
+  font-size: 2rem;
+  color: hsl(250, 69%, 61%);
+}
+
+.skills_icon {
+  margin-right: 0.75rem;
+}
+
+.skills_title {
+  font-size: 1.125rem;
+}
+
+.skills_subtitle {
+  font-size: 0.813rem;
+  color: hsl(250, 8%, 65%);
+  font-family: 'Poppins', sans-serif;
+}
+
+.skills_arrow {
+  margin-left: auto;
+  transition: 0.4s;
+}
+
+.skills_title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.skills_name {
+  font-size: 0.938rem;
+  font-weight: 500;
+}
+
+.skills_bar,
+.skills_percentage {
+  height: 5px;
+  border-radius: 0.25rem;
+}
+
+.skills_bar {
+  background-color: hsl(250, 92%, 85%);
+}
+
+.skills_percentage {
+  display: block;
+  background-color: hsl(250, 69%, 61%);
+}
+
+.skills_html {
+  width: 90%;
+}
+
+.skills_css {
+  width: 90%;
+}
+
+.skills_js {
+  width: 60%;
+}
+
+.skills_ruby {
+  width: 90%;
+}
+
+.skills_r {
+  width: 70%;
+}
+
+.skills_sql {
+  width: 55%;
+}
+
+.skills_figma {
+  width: 90%;
+}
+
+.skills_photoshop {
+  width: 70%;
+}
+
+
+.skills_data {
+  padding: 0 45px;
+}
+
+.skills_close .skills_list {
+  height: 0;
+  overflow: hidden;
+
+}
+
+.skills_open .skills_list {
+  height: max-content;
+  margin-bottom: 2.5rem;
+}
+
+.skills_open .skills_arrow {
+  transform: rotate(-180deg);
+}
+
+
+
+
+
+
+
+
+
+
