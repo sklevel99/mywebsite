@@ -27,7 +27,7 @@ import "bootstrap";
 import { navMenu, navToggle, navClose} from './script';
 import { navLink } from './new_script';
 import { skillsContent, skillsHeader, itemClass} from './skil';
-
+// import { tabs, tabContents, target } from './qualification';
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
 
@@ -35,6 +35,25 @@ document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();
 });
+
+const tabs = document.querySelectorAll('[data-target]'),
+      tabContents = document.querySelectorAll('[data-content]')
+
+tabs.forEach(tab =>{
+  tab.addEventListener('click', () => {
+    const target = document.querySelector(tab.dataset.target)
+
+    tabContents.forEach(tabContent =>{
+      tabContent.classList.remove('qualification_active')
+    })
+    target.classList.add('qualification_active')
+
+    tabs.forEach(tab =>{
+      tab.classList.remove('qualification_active')
+    })
+    tab.classList.add('qualification_active')
+  })
+})
 
 
 
