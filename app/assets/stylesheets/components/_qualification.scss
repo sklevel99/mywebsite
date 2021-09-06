@@ -8,12 +8,12 @@
   font-size: 1.125rem;
   font-weight: 500;
   font-family: 'Poppins', sans-serif;
-  cursor: pointer;
+  // cursor: pointer;
 }
 
-.qualification_button:hover {
-  color: hsl(250, 69%, 61%);
-}
+// .qualification_button:hover {
+//   color: hsl(250, 69%, 61%);
+// }
 
 .qualification_icon {
   font-size: 1.8rem;
@@ -65,17 +65,22 @@
   padding-left: 35px;
 }
 
-.qualification [data-content] {
+// .qualification [data-content] {
+//   display: none;
+// }
+
+// .qualification_active[data-content] {
+//   display: block;
+// }
+
+
+.qualification_none {
   display: none;
 }
 
-.qualification_active[data-content] {
-  display: block;
+.qualification_style {
+  margin-top: -15px;
 }
-
-
-
-
 
 
 
