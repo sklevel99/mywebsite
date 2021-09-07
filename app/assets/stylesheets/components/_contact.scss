@@ -1,0 +1,36 @@
+.hidden {
+  display: none;
+}
+
+.contact_text {
+  font-family: 'Poppins', sans-serif;
+}
+
+.contact_box {
+  width: 300px;
+}
+
+.contact_message {
+  height: 150px;
+  width: 300px;
+}
+
+.contact_press {
+  margin-top: 10px;
+  background-color: hsl(250, 69%, 61%);
+  color: #fff;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0;
+  border: 0;
+}
+
+.contact_press:hover {
+  text-decoration: none;
+  color: #fff;
+  background-color: hsl(250, 57%, 53%);
+}
+

@@ -403,6 +403,79 @@
     <section class="portfolio section" id="portfolio">
       <h2 class="section_title text-center">PORTFOLIO</h2>
       <span class="section_subtitle text-center">Most recent and coming works</span>
+
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <!-- <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol> -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <p class="portfolio_text text-center mt-2">MO INTERN</p>
+            <%= image_tag 'mo.png', class:"d-block portfolio_image" %>
+            <div class="portfolio_span">
+              <a href="http://www.mo-intern.com/" target="_blank" class="portfolio_button">VISIT <i class="fas fa-arrow-right portfolio_icon"></i></a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <p class="portfolio_text text-center">YOUR EPIC TRIPS</p>
+            <%= image_tag 'epic.png', class:"d-block portfolio_image" %>
+            <div class="portfolio_span">
+              <a href="https://airbnb-sklevel99.herokuapp.com/" target="_blank" class="portfolio_button">VISIT <i class="fas fa-arrow-right portfolio_icon"></i></a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <p class="portfolio_text text-center">COMING SOON</p>
+            <%= image_tag 'your.png', class:"d-block portfolio_image" %>
+            <div class="portfolio_span">
+              <a href="https://www.marideal.mu/" target="_blank" class="portfolio_button">DEMO <i class="fas fa-arrow-right portfolio_icon"></i></a>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- CONTACT ME -->
+    <section class="contact section" id="contact">
+      <h2 class="section_title text-center">CONTACT ME</h2>
+      <span class="section_subtitle text-center">Get in touch with me</span>
+
+      <div class="skinny_wrapper wrapper_padding text-center">
+        <%= form_for Contact.new do |f| %>
+          <div >
+            <%= f.label :name, class: "contact_text" %><br>
+            <%= f.text_field :name, required: true, class: "contact_box" %>
+          </div>
+          <br>
+          <div>
+            <%= f.label :email, class: "contact_text" %><br>
+            <%= f.email_field :email, required: true, class: "contact_box" %>
+          </div>
+          <br>
+          <div >
+            <%= f.label :message, class: "contact_text" %><br>
+            <%= f.text_area :message, required: true, as: :text, class: "contact_message"%>
+          </div>
+          <div class="hidden">
+            <%= f.label :nickname %><br>
+            <%= f.text_field :nickname, hint: 'leave this field blank' %>
+          </div>
+          <div class="mt-2">
+            <%= button_tag( :class => "contact_press") do %>
+            SEND <i class="fas fa-envelope-open-text"></i>
+            <% end %>
+          </div>
+        <% end %>
+      </div>
     </section>
   </main>
 </body>
