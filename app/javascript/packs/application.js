@@ -26,7 +26,7 @@ require("channels")
 import "bootstrap";
 import { navMenu, navToggle, navClose} from './script';
 import { navLink } from './new_script';
-import { skillsContent, skillsHeader, itemClass} from './skil';
+// import { skillsContent, skillsHeader, itemClass} from './skil';
 // import { tabs, tabContents, target } from './qualification';
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
