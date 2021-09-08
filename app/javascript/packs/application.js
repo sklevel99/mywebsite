@@ -24,16 +24,19 @@ require("channels")
 
 // External imports
 import "bootstrap";
-import { navMenu, navToggle, navClose} from './script';
+import { navAction } from './script';
 import { navLink } from './new_script';
-// import { skillsContent, skillsHeader, itemClass} from './skil';
-// import { tabs, tabContents, target } from './qualification';
+import { scrollActive } from './scroll';
+import { skillsContent, skillsHeader, toggleSkills } from './skil';
+import { scrollHeader } from './background';
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
 
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();
+  window.addEventListener('scroll', scrollActive);
+  navAction();
 });
 
 

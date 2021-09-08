@@ -1,26 +1,30 @@
-// const skillsContent = document.getElementsByClassName('skills_content'),
-//       skillsHeader  = document.querySelectorAll('.skills_header')
 
-// function toggleSkills(){
-//   let itemClass = this.parentNode.className
+const skillsContent = document.getElementsByClassName('skills_content');
+const skillsHeader  = document.querySelectorAll('.skills_header');
 
-//   for(i = 0; i < skillsContent.length; i++){
-//     skillsContent[i].className = 'skills_content skills_close'
-//   }
+function toggleSkills(){
 
-//   if(itemClass === 'skills_content skills_close'){
-//     this.parentNode.className = 'skills_content skills_open'
-//   }
-// }
+  let itemClass = this.parentNode.className
 
-// skillsHeader.forEach((el) => {
-//   el.addEventListener('click', toggleSkills)
-// })
-// // skillsHeader.forEach(item => item.addEventListener('click', toggleSkills))
+  // for(i = 0; i < skillsContent.length; i++){
+  //   skillsContent[i].className = 'skills_content skills_close'
+  // }
+  if(itemClass === 'skills_content skills_open'){
+    this.parentNode.className = 'skills_content skills_close'
+  }
+
+  if(itemClass === 'skills_content skills_close'){
+    this.parentNode.className = 'skills_content skills_open'
+  }
+}
+
+skillsHeader.forEach((el) => {
+  el.addEventListener('click', toggleSkills)
+})
 
 
 
-// export { skillsContent, skillsHeader, itemClass };
+export { skillsContent, skillsHeader, toggleSkills };
 
 
 
