@@ -29,6 +29,7 @@ import { navLink } from './new_script';
 import { scrollActive } from './scroll';
 import { skillsContent, skillsHeader, toggleSkills } from './skil';
 import { scrollHeader } from './background';
+
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
 
@@ -37,6 +38,7 @@ document.addEventListener('turbolinks:load', () => {
   // initSelect2();
   window.addEventListener('scroll', scrollActive);
   navAction();
+
 });
 
 

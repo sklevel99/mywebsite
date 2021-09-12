@@ -1,0 +1,50 @@
+@media screen and (max-width: 350px){
+  .container{
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .nav_menu {
+    padding: 2rem 0.25rem 4rem;
+  }
+
+  .nav_list {
+    column-gap: 0;
+  }
+
+  .home_content {
+    grid-template-columns: 0.25fr 3fr;
+  }
+
+  .home_blob {
+    width: 180px;
+  }
+
+  .skills_title {
+    font-size: 0.938rem;
+  }
+
+  .qualification_data {
+    gap: 1rem;
+  }
+
+  .qualification_category {
+    padding-left: 0px;
+  }
+
+  .skills_arrow {
+    margin-right: 10px;
+  }
+
+  .contact_box {
+    width: 230px;
+  }
+
+  .contact_message {
+    width: 230px;
+  }
+
+  .footer_copy {
+    font-size: 0.8rem;
+  }
+}
